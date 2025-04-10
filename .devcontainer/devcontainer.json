@@ -1,0 +1,15 @@
+{
+  "name": "android_vendor_lineage_bootanimation-container",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "workspaceMount": "source=.,target=/product/workspace,type=bind",
+  "workspaceFolder": "/product/workspace",
+  "containerUser": "root",
+  "containerEnv": {
+    "CI": "0"
+  },
+  "features": {
+    "ghcr.io/codesandbox/devcontainer-features/codesandbox:latest": {}
+  }
+}
